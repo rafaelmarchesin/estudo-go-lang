@@ -1,0 +1,25 @@
+=== ANOTAÇÕES GO LANG ===
+
+=== 16/04/2020 ===
+## Pacotes ##
+- Os programas escritos em Go são compostos por pacotes
+- Os programas começam a rodar pelo pacote "main"
+    => package main
+- É possível importar outros pacotes
+    =>  import (
+            "fmt"
+            "math/rand"
+        )
+    => No meu entendimento, pacotes são como as bibliotecas -> ou podem ser como classes (isso é apenas uma suposição até então)
+    => Se assemelham aos namespaces, por exemplo, no caso desse import, "math/rand" é o caminho e "rand" é como se fosse a classe a ser instanciada
+    => Usaremos "math/rand" da seguinte maneira:
+        - fmt.println("Olá, mundo", rand.Intn(10))
+    => Existe um pacote criado chamado "rand" e que está dentro do caminho "math"
+    => No arquivo "rand", temos a linha "package rand"
+- fmt.Pintln -> imprime o conteúdo na tela e pula uma linha
+- fmt.Print -> imprime o conteúdo na tela sem pular de linha (Não consegui usar o "\n" para pular de linha, ocorre erro ao executar a aplicação)
+- Não foi preciso usar em nenhum momento o ";"
+    => Dúvida: Existem casos em que é preciso usar ";"?
+    => Em todos os exemplos que eu vi o funcionamento do código, as linhas terminam com ")" ou "}", será que isso significa que, ao terminar com esses caracteres, não é preciso usar ";"
+- Dúvida: O que é especificamente o pacote "fmt"? Ele é obrigatório em todas as aplicações?
+    => Se não me engano, ele é responsável por garantir a formatação no uso de strings

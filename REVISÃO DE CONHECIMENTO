@@ -1,0 +1,14 @@
+=== Revisão Conhecimento Go ===
+
+=== 16/04/2020 ===
+
+- O Go é uma linguagem de programação nova criada pelo Google
+- Tem alguma semelhança com o C, mas eu ainda não sei ao certo qual é essa semelhança
+    - Ponto e vírgula no final? - Ontem eu percebi uma linha de programação sem ponto e vírgula -> Realmente é obrigatório?
+    - Percebi que a identação é um pouco diferente do que eu aprendi até hoje
+- O Go não é orientado a objetos, mas pode ser trabalhado como se fosse.
+- São criadas funções e os métodos são criados do lado de fora do escopo.
+    - Não tem classes, tem structs
+    - É possível trabalhar como se as structs fossem classes porque podemos criar métodos, mas esses métodos são criados do lado de fora
+- Algumas escritas são diferentes
+    - Um exemplo é o "null" que é escrito como "nil"
