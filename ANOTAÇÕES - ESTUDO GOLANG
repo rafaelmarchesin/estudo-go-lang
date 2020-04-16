@@ -53,9 +53,19 @@
 - De acordo com o tour, uma função pode ter 0 ou mais argumentos
     => Acredito que isso queira dizer aos elementos que podem ser inseridos dentro de uma função, por exemplo: funcao(argumentos)
     => Se bem que, isso que eu falei que é argumento é parâmetro
+    => Se não me engano, argumentos são as características de um objeto, por exemplo [ var cor string = "tal"]
 - Em Go, o tipo das funções são declarados, deve funcionar como nas demais linguagens, ou seja, o tipo da função representa o tipo de dado que será retornado
 - A diferença ao se delcarar o tipo em GoLang da forma de se declarar em C é que o tipo vem na após a declaração e não antes
     => x int, y int
     => func teste() int {}
 - Acredito que, se uma função não tiver retorno, não é preciso declarar o tipo da função
+- No Go, os parâmetros de uma função podem ser declarados da seguinte maneira:
+    => x,y int -> desde que ambos sejam do mesmo tipo
+- Uma função pode retornar mais de um resultado
+    => Mas, para permitir que uma função retorne mais de um resultado, é preciso fazer o seguinte:
+    => func swap(x, y string) (string, string) {
+	       return y, x
+       }
+    => Observando que é necessário dizer quais são os tipos de retorno: (string, string)
+    => E se eu colocar que vou retornar dois ou mais valores, eu tenho mesmo que retornar o número de valores indicados, senão vai dar problema no código
 
