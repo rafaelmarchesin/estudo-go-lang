@@ -23,3 +23,15 @@
     => Em todos os exemplos que eu vi o funcionamento do código, as linhas terminam com ")" ou "}", será que isso significa que, ao terminar com esses caracteres, não é preciso usar ";"
 - Dúvida: O que é especificamente o pacote "fmt"? Ele é obrigatório em todas as aplicações?
     => Se não me engano, ele é responsável por garantir a formatação no uso de strings
+
+## Importações ##
+- Acredito que a forma correta de imprimir algo na tela não é usando "fmt.Print", mas, sim "fmt.Printf"
+- Quando eu rodei o código apenas com Print, ele demorou muito para rodar, apesar de ter rodado
+- Com o Printf, o "\n" funciona
+- O import também pode ser feito da seguinte maneira:
+    =>  import "fmt"
+        import "math/rand"
+- Quando importamos "math/rand", estamos importando apenas o "rand", mas, quando importamos apenas "math", importamos todos os pacotes contidos dentro de "math" (acredito que seja isso, mas não tenho certeza)
+    => Depois de fazer um teste, descobri que a importação funciona como quando importamos uma classe a partir de um namespace. Só importa a classe e não se extende às demais classes filhas daquele caminho.
+    => Portanto, ao importar apenas "math", não temos acesso à "rand"
+- 
