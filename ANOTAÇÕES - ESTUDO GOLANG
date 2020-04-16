@@ -50,6 +50,12 @@
     => Quando falamos isso, quer dizer que devemos indicar dentro da escrita do pacote que aquele nome pode ser exportado? Igual privado, protegido e público?
 
 ## Funções ##
--
-
+- De acordo com o tour, uma função pode ter 0 ou mais argumentos
+    => Acredito que isso queira dizer aos elementos que podem ser inseridos dentro de uma função, por exemplo: funcao(argumentos)
+    => Se bem que, isso que eu falei que é argumento é parâmetro
+- Em Go, o tipo das funções são declarados, deve funcionar como nas demais linguagens, ou seja, o tipo da função representa o tipo de dado que será retornado
+- A diferença ao se delcarar o tipo em GoLang da forma de se declarar em C é que o tipo vem na após a declaração e não antes
+    => x int, y int
+    => func teste() int {}
+- Acredito que, se uma função não tiver retorno, não é preciso declarar o tipo da função
 
