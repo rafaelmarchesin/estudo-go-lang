@@ -34,4 +34,22 @@
 - Quando importamos "math/rand", estamos importando apenas o "rand", mas, quando importamos apenas "math", importamos todos os pacotes contidos dentro de "math" (acredito que seja isso, mas não tenho certeza)
     => Depois de fazer um teste, descobri que a importação funciona como quando importamos uma classe a partir de um namespace. Só importa a classe e não se extende às demais classes filhas daquele caminho.
     => Portanto, ao importar apenas "math", não temos acesso à "rand"
-- 
+- Quando importamos um pacote e não usamos ele, recebemos a mensagem de que ele foi importado, mas não usado
+- Se fazemos o uso de um método de um pacote sem indicar que vem desse pacote, recebemos a mensagem de que o método é indefinido e, portanto, recebemos uma mensagem de erro
+- Quando usamos uma fóruma e queremos acrescentar o resultado dentro da string, utilizamos "%g" assim como no C, que utilizamos o "%d"
+    => Ex.: fmt.Printf("A raiz quadrada de 9 é: %g", math.Sqrt(9))
+
+## Nomes exportados ##
+- Neste tópico, tratamos de nomes exportados, o que eu ainda não entendi o que é
+- De acordo com o material do A Tour of Go, um nome pode ser exportado de um pacote como, por exemplo, Pi sendo exportado do pacote "math": math.Pi
+- Para ser um nome exportado, é preciso ter a letra maiúscula
+- Se eu entendi bem, um nome exportado é um método chamado de um pacote, como se ele tivesse sido instanciado
+- Obrigatoriamente deve começar com a primeira letra em maiúscilo, mas eu ainda não sei se é preciso começar com a letra maiúscula no código dentro do pacote pai
+    => Quero dizer, será que quando criamos o método "pi" dentro de "math" foi preciso colocar a primeira letra em maiúsculo, também?
+- Nomes não exportados não são acessíveis do lado de fora do pacote.
+    => Quando falamos isso, quer dizer que devemos indicar dentro da escrita do pacote que aquele nome pode ser exportado? Igual privado, protegido e público?
+
+## Funções ##
+-
+
+
